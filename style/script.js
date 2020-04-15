@@ -7,7 +7,7 @@ function carregar() {
     var horas = date.getHours()
     var minutos = date.getMinutes()
 
-    var horas = 23
+
 
     msg.innerHTML = `Agora são <strong>${horas} horas </strong> e <strong>${minutos} minutos</strong>`
 
