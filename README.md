@@ -1,4 +1,3 @@
 # age selector is my FIRST JS exercise
 
-https://obrenoco.github.io/time-clock/
-
+https://obrenoco.github.io/age-selector/
