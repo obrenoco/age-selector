@@ -30,3 +30,19 @@ footer p{
     font-weight: bold;
     color: white;
 }
+
+#res img{
+    margin-top: 20px;
+}
+
+#btn {
+    padding: 15px;
+    background-color:white;
+    border-radius: 6px;
+}
+
+#btn:hover {
+    background-color:red;
+}
+
+

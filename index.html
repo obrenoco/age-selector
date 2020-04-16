@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sua hora</title>
+    <title>Sua idade</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1 id="title">BOM DIA</h1>
+        <h1 id="title">Veja sua idade</h1>
     </header>
     <section>
+        <p>Ano de Nascimento
+            <input type="number" name="ano" id="ano" min="0">
+        </p>
+        <p>Sexo
+            <input type="radio" name="sexo" id="masc">
+            <label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="fem">
+            <label for="fem">Feminino</label>
+            <input type="radio" name="sexo" id="capi">
+            <label for="capi">Capivara</label>
+        </p>
+        <p>
+            <input type="button" id="btn" value="VER" onclick="verify()">
+        </p>
+
+        <div id="res">
+            Preencha os campos acima
+        </div>
+
         <div><img src="" alt="" id="img"></div>
         <div id="text"></div>
     </section>

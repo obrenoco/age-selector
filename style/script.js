@@ -1,36 +1,78 @@
-function carregar() {
-    var title = document.getElementById('title')
-    var msg = document.getElementById('text')
-    var img = document.getElementById('img')
+function verify() {
 
-    var date = new Date()
-    var horas = date.getHours()
-    var minutos = date.getMinutes()
+    var data = new Date()
+    var esseano = data.getFullYear()
+    var ano = document.getElementById('ano')
+    var res = document.getElementById('res')
 
-
-
-    msg.innerHTML = `Agora são <strong>${horas} horas </strong> e <strong>${minutos} minutos</strong>`
-
-    
-
-    if ( horas >= 0 && horas < 12 ) {
-        // BOM DIA
-        title.innerHTML = `BOM DIA`
-        img.src = 'img/bomdia.png'
-        document.body.style.background = '#FFF218'
-    } else if (  horas >= 12 && horas <= 18  ) {
-        // BOA TARDE
-        title.innerHTML = `BOA TARDE`
-        img.src = 'img/boatarde.png'
-        document.body.style.background = '#FF810E'
-    } else if ( horas >= 19 && horas <= 24 ) {
-        //BOA NOITE
-        title.innerHTML = `BOA NOITE`
-        img.src = 'img/boanoite.png'
-        document.body.style.background = 'black'
+    if ( ano.value.length == 0 || ano.value > esseano ) {
+        window.alert('Insira o ano de nascimento')
     } else {
-        title.innerHTML = `NOT VALID`
+        var fsex = document.getElementsByName('sexo')
+        var idade = esseano - Number(ano.value)
+        var img = document.getElementById('img')
+        img.setAttribute('id', 'img')
+        var genero = ''
+        if (fsex[0].checked) {
+            if (idade >= 0 && idade < 9) {
+                // QUIANÇA
+                genero = 'uma quiança'
+                img.setAttribute('src', 'img/baby.png')
+                
+            } else if ( idade < 13 ) {
+                // JOVEM
+                genero = 'uma quiança velha'
+                img.setAttribute('src', 'img/kid-m.png')
+            } else if ( idade < 21) {
+                // JOVEM
+                genero = 'um adolescente chato'
+                img.setAttribute('src', 'img/teen-m.png')
+            } else if ( idade < 50 ) {
+                //ADULTO
+                genero = 'um adultinho'
+                img.setAttribute('src', 'img/adult-m.png')
+            } else if ( idade < 120 ) {
+                // IDOSO
+                genero = 'um veiote'
+                img.setAttribute('src', 'img/old-m.png')
+            }
+            else {
+                // MÚMIA
+                genero = 'uma múmia'
+                img.setAttribute('src', 'img/mummie.png')
+            }
+        } else if (fsex[1].checked) {
+            if (idade >= 0 && idade < 9) {
+                // QUIANÇA
+                genero = 'uma quiança'
+                img.setAttribute('src', 'img/baby.png')
+            }  else if ( idade < 13 ) {
+                // JOVEM
+                genero = 'uma quiança velha'
+                img.setAttribute('src', 'img/kid-f.png')
+            } else if ( idade < 21) {
+                // JOVEM
+                genero = 'uma adolescente chata'
+                img.setAttribute('src', 'img/teen-f.png')
+            } else if ( idade < 50 ) {
+                //ADULTO
+                genero = 'uma adultinha'
+                img.setAttribute('src', 'img/adult-f.png')
+            } else if ( idade < 120 ) {
+                // IDOSO
+                genero = 'uma veiota'
+                img.setAttribute('src', 'img/old-f.png')
+            }
+            else {
+                // MÚMIA
+                genero = 'uma múmia'
+                img.setAttribute('src', 'img/mummie.png')
+            }
+        } else if (fsex[2].checked) {
+            genero = 'uma capivara maneira'
+            img.setAttribute('src', 'img/capivara.png')
+        }
+        res.innerHTML = `Você é <strong>${genero}</strong> e tem <strong>${idade} anos</strong>`
+        res.appendChild(img)
     }
-
 }
-    
