@@ -8,9 +8,9 @@
 
 <p  align="center">
   <a  href="">
-  <img  src="https://img.shields.io/github/stars/obrenoco/trap-box-js" />
+  <img  src="https://img.shields.io/github/stars/obrenoco/age-selector" />
   </a>
-  <img  src="https://img.shields.io/github/forks/obrenoco/trap-box-js" />
+  <img  src="https://img.shields.io/github/forks/obrenoco/age-selector" />
   </a>
 </p>
 
