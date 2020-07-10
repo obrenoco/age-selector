@@ -109,7 +109,7 @@ Feel free to **file a new issue** with a respective title and description on thi
 
 
 Released in 2020.
-From CursoEmVídeo sponsored by Google
+From CursoEmVídeo sponsored by Google.
 This project is under the [MIT license](https://github.com/obrenoco).
 
 Made with love by [Breno Romeiro](https://github.com/obrenoco) 💜🚀
