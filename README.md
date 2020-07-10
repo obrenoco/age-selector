@@ -90,7 +90,7 @@ SSH URLs provide access to a Git repository via SSH, a secure protocol. If you u
 
 
 
-Feel free to **file a new issue** with a respective title and description on the the [JavaScript30 Challenge](https://github.com/obrenoco) repository. If you already found a solution to your problem, **Don't miss out too and come help :)**!
+Feel free to **file a new issue** with a respective title and description on this repository. If you already found a solution to your problem, **Don't miss out too and come help :)**!
 
 
 
@@ -98,7 +98,7 @@ Feel free to **file a new issue** with a respective title and description on the
 
 
 
-From CursoEmVídeo sponsored by Google
+
 
 
 
@@ -109,7 +109,7 @@ From CursoEmVídeo sponsored by Google
 
 
 Released in 2020.
-
+From CursoEmVídeo sponsored by Google
 This project is under the [MIT license](https://github.com/obrenoco).
 
 Made with love by [Breno Romeiro](https://github.com/obrenoco) 💜🚀
